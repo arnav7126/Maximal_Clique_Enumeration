@@ -36,11 +36,11 @@ g++ -std=c++17 -O3 chiba.cpp -o 3
 
 ### Website Link
 
-[Clique Enumeration](https://archithvk0.github.io/maximal-clique/index.html)
+[Clique Enumeration](https://arnav7126.github.io/Maximal_Clique_Enumeration/website/index.html)
 
 ### GitHub Link
 
-[Github Repo Link](https://github.com/archithvk0/maximal-clique.git)
+[Github Repo Link](https://github.com/arnav7126/Maximal_Clique_Enumeration.git)
 
 ### Individual Contribution
 
