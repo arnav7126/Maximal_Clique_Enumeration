@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki-Vote Dataset</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+       
+        overflow: hidden; /* Prevents any overflow */
+      }
+      .graph-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .graph-container img {
+        width: 80%; /* Reduces the image to 1/5th of its original width */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Wiki-Vote Dataset</h1>
+     
+     
+      <h2>Number of Nodes and Edges</h2>
+      <ul>
+        <li>Nodes: 7,115</li>
+        <li>Edges: 103,689</li>
+      </ul>
+   
+      <h2>Link</h2>
+      <p>
+        <a href="https://snap.stanford.edu/data/wiki-Vote.html" target="_blank"
+          >Download Wiki-Vote Dataset</a
+        >
+      </p>
+      <h2>Maximal Clique Size Distribution</h2>
+      <div class="graph-container">
+        <img src="wiki-hist.jpg" alt="Wiki-Vote Clique Size Histogram" />
+      </div>
+      <a href="datasets.html" class="btn">Back to Datasets</a>
+    </div>
+  </body>
+</html>

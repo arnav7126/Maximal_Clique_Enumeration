@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arboricity-Based CLIQUE Algorithm</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: left;
+      }
+      pre {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      graph-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .graph-container img {
+        width: 80%; /* Reduces the image to 1/5th of its original width */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Chiba's Algorithm</h1>
+      
+      <p>Chiba's Algorithm is an efficient method for listing all maximal cliques in a graph, leveraging <strong>arboricity</strong> to optimize the search.</p>
+
+<ul>
+  <li>Operates by decomposing the graph into low-degree subgraphs for efficient clique enumeration.</li>
+  <li>Utilizes the concept of <strong>k-core decomposition</strong> to reduce redundant computations.</li>
+  <li>Processes edges in a structured manner:</li>
+  <ul>
+    <li><strong>High-degree vertices are processed first,</strong> reducing the number of edges explored per vertex.</li>
+    <li><strong>Each edge is considered only once,</strong> improving efficiency.</li>
+  </ul>
+  <li>Runs in <strong>O(a(G) * m)</strong> time, where <strong>a(G)</strong> is the arboricity of the graph and <strong>m</strong> is the number of edges.</li>
+  <li>Works best for <strong>sparse graphs</strong> with low arboricity, making it highly efficient for large-scale networks.</li>
+</ul>
+
+    
+      <h3>Performance Results</h3>
+      <div class="graph-container">
+        <img src="chiba-results1.jpg" alt="Arboricity Performance Graph" />
+      </div>
+      <a href="algorithms.html" class="btn">Back to Algorithms</a>
+    </div>
+  </body>
+</html>

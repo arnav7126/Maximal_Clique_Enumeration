@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bron-Kerbosch Algorithm</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: left;
+      }
+      pre {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      graph-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .graph-container img {
+        width: 80%; /* Reduces the image to 1/5th of its original width */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Bron-Kerbosch Algorithm</h1>
+      <p>It is recursive and uses depth-first search (DFS).</p>
+
+<ul>
+  <li>Operates in three main sets:</li>
+  <ul>
+    <li><strong>R (current clique):</strong> Vertices that form a clique.</li>
+    <li><strong>P (potential candidates):</strong> Vertices that can still be added to R.</li>
+    <li><strong>X (already explored vertices):</strong> Vertices that were part of previous cliques.</li>
+  </ul>
+  <li>The algorithm explores all possible combinations of vertices to identify maximal cliques.</li>
+</ul>
+      
+      <h3>Performance Results</h3>
+      <div class="graph-container">
+        <img
+          src="bronkerbosch-results.jpg"
+          alt="Bron-Kerbosch Performance Graph"
+        />
+      </div>
+      <a href="algorithms.html" class="btn">Back to Algorithms</a>
+    </div>
+  </body>
+</html>
